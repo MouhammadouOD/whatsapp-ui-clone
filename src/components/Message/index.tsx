@@ -1,3 +1,4 @@
+import { BsCheck2All } from 'react-icons/bs'
 import dayjs from '../../helpers/daysjs-with-plugin'
 
 interface Props {
@@ -44,25 +45,25 @@ const Message = ({
           <div
             className={
               `mx-px my-px px-2.5 py-4 text-black rounded-2xl max-w-[70%]
-              ${
-                isMine
+              ${isMine
                 ? 'bg-green-100 rounded-tl-2xl rounded-bl-2xl rounded-tr-2xl rounded-br-sm'
                 : 'bg-white  rounded-tl-2xl rounded-bl-sm rounded-tr-2xl rounded-br-2xl'
               }
               ${startsSequence ? 'mt-2' : ''}`
-              }
+            }
             title={friendlyTimestamp}
           >
             {message}
+            
           </div>
-          
+
         </div>
         {endsSequence ? (
           <div
             className={
               `py-2 text-xs text-black 
               ${endsSequence ? 'visible' : 'invisible'}`
-              }
+            }
           >
             {' '}
             <div

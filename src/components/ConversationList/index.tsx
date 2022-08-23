@@ -37,6 +37,7 @@ const ConversationList = () => {
       photo={conversation.photo} 
       lastMessage={conversation.lastMessage} 
       seen={conversation.seen}
+      from={conversation.from}
       timestamp={conversation.timestamp}
       />) )}
       </div>

@@ -6,10 +6,11 @@ interface Props {
   photo: string
   lastMessage: string
   seen: boolean
+  from : string
   timestamp : Date
 }
 
-const ConversationListItem = ({ name, photo, lastMessage, seen, timestamp } : Props) => {
+const ConversationListItem = ({ name, photo, lastMessage, seen, from, timestamp } : Props) => {
 
   if(lastMessage.length > 50){
     lastMessage= `${lastMessage.substring(0,50)}...`
@@ -31,7 +32,7 @@ const ConversationListItem = ({ name, photo, lastMessage, seen, timestamp } : Pr
       <div className='w-full'>
         <h1 className='text-md text-black capitalize'>{name}</h1>
         <div className='flex space-x-1'>
-          <BsCheck2All className={`text-${seen ? 'blue-500' : 'gray-800'}`} />
+          {from === 'me' && <BsCheck2All className={`text-${seen ? 'blue-500' : 'gray-800'} `} />}
           <p className='text-xs text-gray-800 w-[23em] h-8'>
             {lastMessage}
           </p>
