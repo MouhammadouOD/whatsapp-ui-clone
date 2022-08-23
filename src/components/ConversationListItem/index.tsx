@@ -32,7 +32,7 @@ const ConversationListItem = ({ name, photo, lastMessage, seen, from, timestamp 
       <div className='w-full'>
         <h1 className='text-md text-black capitalize'>{name}</h1>
         <div className='flex space-x-1'>
-          {from === 'me' && <BsCheck2All className={`text-${seen ? 'blue-500' : 'gray-800'} `} />}
+        {from === 'me' && <BsCheck2All className={`${ seen ? 'text-blue-500' : 'text-gray-800'} `} />}
           <p className='text-xs text-gray-800 w-[23em] h-8'>
             {lastMessage}
           </p>
