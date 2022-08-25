@@ -1,20 +1,20 @@
 # whatsapp-ui-clone
-#install react with typescript using Vite
+######## install react with typescript using Vite
 
-yarn create vite
+--> yarn create vite
 
-#setup tailwindcss 
+######## setup tailwindcss 
 
-check the documentation https://bit.ly/3POBWgu
+--> check the documentation https://bit.ly/3POBWgu
 
-#install react-icons for icons
+######## install react-icons for icons
 
-yarn add -D react-icons
+y--> arn add -D react-icons
 
-#install dayjs for Date format
+######## install dayjs for Date format
 
-yarn add -D dayjs
+--> yarn add -D dayjs
 
-#Don't forget to setup the helper for dayjs
+######## Don't forget to setup the helper for dayjs
 
 #Let's Dive into the code 
